@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Josh's Portfolio</title>
-        <link rel="stylesheet" href="assets/css/reset.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-
-        <title>Josh's Portfolio</title>
-    </head>
-  <body>
-
-    <!-- header and nav -->
-    
-    <header>
-      <div class="wrapper">
-        <h1>Joshua Maney</h1>
-        <nav class="navbar">
-          <ul>
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua's Portfolio</title>
+</head>
+<body>
+  
+  <header>
+    <h1>Joshua Maney</h1>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- banner -->
- 
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1 style="font-size:50px">Portfolio</h1>
-      </div>
+      </nav>
     </div>
+  </header>
 
-    <main> 
+  <main>
 
-      <!-- about me -->
-      
-      <section id="about" class="main-page"></section>
-        <h2>About me</h2>
-          <img src="assets/photos/profilePhoto.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="hero"></div>
 
-      <!-- work portfolio -->
+    <section class="left-side" id="about">
+      <h2>About</h2>
+    </section>
 
-      <section id="work" class="main-page"></section>
-        <h2>Work</h2>
-        <img src="assets/photos/calc.jpg">
-        <img src="assets/photos/ledWall.png">
-        <img src="assets/photos/pastel.jpeg">
-        <img src="assets/photos/screenshot.png">
+    <container id="about">
+      <p>
+        <img src="assets/photos/profilePhoto.jpg">
+        Lorem ipsum
+      </p>
+    </container>
 
-      <!-- contact me -->
+    <section class="left-side" id="work">
+      <h2>Work</h2>
+    </section>
 
-      <section id="contact" class="main-page"></section>
-        <h2>Contact Me</h2>
-        <p></p>
+    <container class="card">
+      <img src="assets/photos/screenshot.png">
+      <img src="assets/photos/calc.jpg">
+      <img src="assets/photos/ledWall.png">
+      <img src="assets/photos/pastel.jpeg">
+    </container>
 
-    </main>
-  </body>
+    <section class="left-side" id="contact">
+      <h2>Contact</h2>
+    </section>
+
+    <container>
+      <ul>
+        <li>(828) 577 7080</li>
+        <li>
+          <a href="https://github.com/joshuamaney">Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/josh-maney-8177a3203/">Linkedin</a>
+        </li>
+      </ul>
+    </container>
+
+  </main>
+  
+</body>
 </html>
