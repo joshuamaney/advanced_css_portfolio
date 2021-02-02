@@ -1,119 +1,119 @@
-html {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(27, 27, 27);
+    color: rgb(228, 228, 228);
     font-family: monospace;
-    background-color: black;
-}
-
-h1 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 300;
-}
+    margin: 0;
+  }
 
 h2 {
-    color: #fff;
     font-size: 25px;
     font-weight: 30px;
 }
 
 p {
-    color: #fff;
-    font-size: 14px;
-}
-
-.wrapper {
-    padding: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
-    color: #ffffff;
-}
-
-.wrapper h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.wrapper nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.wrapper nav ul {
-    list-style-type: none;
-}
-
-.wrapper nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    font-size: 16px;
 }
 
 a {
-    color: #ffffff;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
+}
+
+
+nav {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color:rgb(228, 228, 228);
+    color:rgb(27, 27, 27);
 }
 
 .hero {
-    height: 300px;
-    width: 100%;
     margin-bottom: 45px;
     background-image: url(../photos/hero.png);
-    background-size: cover;
-    background-attachment: fixed;
+    flex: 1;
+    max-width: 100%;
+    height: 150px;
 }
 
 .left-side {
     display: flex;
     justify-content: flex-end;
     border-right: 4px #fff solid;
-    min-width: 10%;
+    min-width: 20%;
     max-width: 10%;
     margin: 10px 0 10px 0;
     padding: 0 10px 0px 0;
 }
 
+
 .container-1 {
     display: flex;
-    margin: 10px 0 10px 0;
 }
 
-.box-2 {
+#profileImg {
     margin-left: 20px;
 }
 
-.box-3 {
+.aboutText {
     margin-left: 45px;
     margin-right: 45px;
 }
 
 .container-2 {
-    display: flex;
-    margin: 10px 0 10px 0;
-    
+    display: flex; 
+    margin-top: 30px;  
 }
 
 .container-2a {
+    align-items: flex-start;
     display: flex;
+    flex: 4;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 10px 0;
+    margin: 30px;
 }
 
 .container-3 {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 10px 0;   
-}
-
-.box-10 {
-    margin-left: 30px;
-}
-
-.box-12 {
-    margin-right: 30px;    
+    margin-top: 30px
 }
 
 .card {
     margin: 3px;
+}
+
+
+@media all and (max-width: 980px)  {
+    nav ul, .left-side, .container-1, .container-2, .container-2a, .container-3, .clinks{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-side {
+        border-bottom: 4px #fff solid;
+        border-right: 0px;
+
+    }
 }
